@@ -1,261 +1,327 @@
-# NEXUS - Premium Tech Company Website
+# 🌟 NEXUS - Premium Tech Website
 
-A modern, high-performance website featuring advanced cursor interactions, space-inspired dark theme, and smooth animations.
+> **A cutting-edge, high-performance tech company website** featuring advanced interactive animations, sophisticated cursor interactions, and a stunning space-inspired dark theme.
 
-## ✨ Features
+<div align="center">
 
-### Design & Aesthetics
+![Next.js Badge](https://img.shields.io/badge/Next.js-16.2.3-black?style=flat-square&logo=next.js)
+![React Badge](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)
+![TypeScript Badge](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-3.0-38B2AC?style=flat-square&logo=tailwindcss)
+![Framer Motion Badge](https://img.shields.io/badge/Framer%20Motion-10-FF1B6D?style=flat-square)
+![License Badge](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-- **Dark Space Theme**: Deep colors (black, charcoal, navy) with soft accents (white, muted blue)
-- **Premium Feel**: Glassmorphism effects, soft shadows, thin borders
-- **Cinematic Design**: Gradient backgrounds, starfield animation, floating elements
+[View Live Demo](https://nexus-website.vercel.app) • [Report Bug](https://github.com/Hiran-Abhisheka/nexus-website/issues) • [Request Feature](https://github.com/Hiran-Abhisheka/nexus-website/issues)
 
-### Cursor Interactions
+</div>
 
-- **Custom Cursor**: Smooth animated cursor with trailing effects
-- **Cursor Followers**: Multiple rings that follow the mouse
-- **Magnetic Buttons**: Buttons that subtly pull toward your cursor
-- **3D Tilt Cards**: Interactive cards tilt based on cursor position
-- **Parallax Effects**: Background elements move with cursor
-- **Cursor-Reactive Particles**: Starfield responds to mouse movement
+---
 
-### Animations
+## ✨ Key Features
 
-- **Smooth Page Transitions**: Fade and slide animations
-- **Scroll Reveal**: Staggered fade-in animations as you scroll
-- **Floating Elements**: Subtle anti-gravity floating animations
-- **Micro-interactions**: Smooth hover and click feedback
-- **Auto-scrolling Testimonials**: Smooth carousel transitions
+### 🎨 **Premium Design**
+- **Dark Space Theme** with glassmorphism & cinematic lighting
+- **Responsive Design** optimized for all devices (mobile, tablet, desktop)
+- **Custom Color Palette** with accent blues, indigos & purples
+- **Gradient Overlays** and smooth visual transitions
+- **Professional Typography** with proper hierarchy
 
-### Sections
+### 🖱️ **Advanced Cursor Interactions**
+- **3-Layer Custom Cursor** with spring physics animations
+- **Magnetic Buttons** that pull toward your cursor
+- **Interactive 3D Cards** with tilt effects based on mouse movement
+- **Parallax Background** following cursor position
+- **Reactive Starfield** with 150 interactive particles
+- **GPU-Accelerated** performance (60fps)
 
-1. **Navbar**: Glassmorphism effect with smooth scroll detection
-2. **Hero**: Interactive parallax background with stats
-3. **About**: Clean fade-in with animated decorations
-4. **Services**: 6 interactive service cards with 3D tilt
-5. **Portfolio**: Hover-zoom project cards with category tags
-6. **Testimonials**: Auto-rotating carousel with manual controls
-7. **Contact**: Modern form with validation feedback
-8. **Footer**: Links and social media integration
+### ⚡ **Smooth Animations**
+- **Framer Motion** for professional motion graphics
+- **Scroll Reveal Effects** with IntersectionObserver
+- **Staggered Animations** for visual hierarchy
+- **Auto-playing Testimonials** carousel with manual controls
+- **Floating Elements** with subtle anti-gravity effects
+- **Hover Interactions** with instant, responsive feedback
+
+### 📊 **Portfolio Showcase**
+- 6 Featured projects with animated cards
+- Tech stack tags for each project
+- Glowing border effects on hover
+- Smooth scale & brightness animations
+- Category-based organization
+
+### 📱 **Performance Optimized**
+- **Turbopack** for lightning-fast builds
+- **Event Throttling** for smooth interactions
+- **CSS Optimization** through Tailwind purging
+- **Fast Content Delivery** with Next.js optimization
+- **Mobile-First Approach** with progressive enhancement
+
+---
+
+## 🎯 Sections Overview
+
+| Section | Features |
+|---------|----------|
+| **Navbar** | Smooth scroll detection, responsive menu, glass effect |
+| **Hero** | Cursor-tracking gradients, parallax orbs, achievement stats |
+| **About** | Animated background, feature highlights, animated icons |
+| **Services** | 6 interactive cards with 3D tilt, icon animations |
+| **Portfolio** | 6 project cards with tech tags, hover effects, glowing borders |
+| **Testimonials** | Auto-rotating carousel, manual navigation, smooth transitions |
+| **Contact** | Form with validation, success feedback, decorative elements |
+| **Footer** | Links, social media, copyright info |
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
-- Node.js 18+
-- npm or yarn
+- **Node.js** 18.0 or higher
+- **npm** or **yarn** package manager
+- **Git** for cloning
 
 ### Installation
 
-1. Navigate to the project directory:
-
 ```bash
-cd d:\newproject
-```
+# Clone the repository
+git clone https://github.com/Hiran-Abhisheka/nexus-website.git
+cd nexus-website
 
-2. Install dependencies:
+# Install dependencies
+npm install --legacy-peer-deps
 
-```bash
-npm install
-```
-
-3. Run the development server:
-
-```bash
+# Start the development server
 npm run dev
+
+# Open http://localhost:3000 in your browser
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## 📁 Project Structure
-
-```
-app/
-├── layout.tsx          # Root layout with CustomCursor and StarField
-└── page.tsx            # Main page with all sections
-
-components/
-├── CustomCursor.tsx    # Animated cursor component
-├── StarField.tsx       # Canvas-based animated starfield
-├── Navbar.tsx          # Navigation with scroll detection
-├── Hero.tsx            # Hero section with parallax
-├── About.tsx           # About section with animations
-├── Services.tsx        # Services grid with interactive cards
-├── Portfolio.tsx       # Portfolio with hover effects
-├── Testimonials.tsx    # Auto-rotating testimonials
-├── Contact.tsx         # Contact form
-├── Footer.tsx          # Footer with links
-├── MagneticButton.tsx  # Reusable magnetic button
-├── InteractiveCard.tsx # Reusable 3D tilt card
-└── index.ts            # Component exports
-
-hooks/
-├── useCursor.ts        # Cursor tracking and interaction hooks
-│                       # - useCursorPosition()
-│                       # - useSmoothCursor()
-│                       # - useParallax()
-│                       # - useMagneticEffect()
-│                       # - use3DTilt()
-└── useAnimations.ts    # Animation and scroll hooks
-                        # - useScrollReveal()
-                        # - useMouseTracker()
-                        # - useWindowSize()
-                        # - useScrollPosition()
-
-styles/
-└── globals.css         # Global styles and animations
-
-Configuration files:
-├── package.json        # Dependencies and scripts
-├── tsconfig.json       # TypeScript configuration
-├── tailwind.config.js  # Tailwind CSS configuration
-├── postcss.config.js   # PostCSS configuration
-└── next.config.js      # Next.js configuration
-```
-
-## 🎨 Customization
-
-### Colors
-
-Edit `tailwind.config.js` to modify the color scheme:
-
-```javascript
-colors: {
-  dark: {
-    bg: '#0a0e27',      // Main background
-    surface: '#11152e', // Card backgrounds
-    border: '#1e2a4f',  // Border color
-    text: '#e0e5f0',    // Text color
-    muted: '#8894b1',   // Muted text
-  },
-  accent: {
-    blue: '#00d4ff',    // Primary accent
-    indigo: '#6366f1',  // Secondary accent
-    purple: '#a78bfa',  // Tertiary accent
-  },
-}
-```
-
-### Animations
-
-Modify animation speeds in:
-
-- `components/CustomCursor.tsx` - Cursor spring tension
-- `hooks/useCursor.ts` - Parallax and tilt effects
-- `tailwind.config.js` - Global animation timing
-
-### Starfield
-
-Customize the starfield in `components/StarField.tsx`:
-
-- `numStars` - Number of visible stars
-- `maxDistance` - Distance at which cursor affects stars
-- Star movement velocity and opacity
-
-## ⚡ Performance Optimizations
-
-- **Debounced Mouse Events**: Smooth interactions without lag
-- **RequestAnimationFrame**: 60fps animations
-- **Lazy Component Loading**: Images and sections load efficiently
-- **CSS Optimization**: Tailwind CSS tree-shaking
-- **Smooth Scroll**: CSS scroll-behavior integration
-
-## 🔧 Building for Production
+### Build for Production
 
 ```bash
 npm run build
 npm start
 ```
 
-Or deploy directly to Vercel:
+---
 
-```bash
-npm i -g vercel
-vercel
+## 📁 Project Structure
+
 ```
-
-## 📦 Dependencies
-
-- **Next.js**: React framework for production
-- **React**: UI library
-- **Framer Motion**: Advanced animation library
-- **Tailwind CSS**: Utility-first CSS framework
-- **TypeScript**: Type safety
-
-## 🎯 Browser Support
-
-- Chrome/Edge 90+
-- Firefox 88+
-- Safari 14+
-
-## 📱 Responsive Design
-
-The website is fully responsive:
-
-- Mobile: 320px+
-- Tablet: 768px+
-- Desktop: 1024px+
-
-## 🚀 Advanced Features
-
-### Custom Cursor System
-
-- Three-layer cursor design (dot, ring, outer ring)
-- Magnetic effect on interactive elements
-- Context-aware styling
-
-### 3D Interactions
-
-- CSS 3D transforms for card tilt
-- Mouse tracking for perspective effects
-- Smooth spring animations
-
-### Parallax Engine
-
-- Multi-layer depth effects
-- Cursor-responsive backgrounds
-- Smooth easing and transitions
-
-### Scroll Animations
-
-- Intersection Observer API
-- Staggered reveal animations
-- Threshold-based triggering
-
-## 🐛 Troubleshooting
-
-**Animations Feel Laggy:**
-
-- Check GPU acceleration is enabled
-- Reduce particle count in StarField
-- Close other resource-heavy applications
-
-**Custom Cursor Not Showing:**
-
-- Make sure JavaScript is enabled
-- Check browser console for errors
-- Clear browser cache
-
-**Starfield Not Responding to Cursor:**
-
-- Verify mouse move events are firing
-- Check canvas size matches viewport
-- Ensure mousePosition state updates
-
-## 📄 License
-
-This project is available for personal and commercial use.
-
-## 🤝 Contributing
-
-Feel free to customize and extend this project for your needs.
-
-## 📞 Support
-
-For questions or issues, review the component documentation in each file.
+nexus-website/
+│
+├── app/
+│   ├── layout.tsx          # Root layout with CustomCursor & StarField
+│   ├── page.tsx            # Main homepage
+│   └── globals.css         # Global styles
+│
+├── components/
+│   ├── Navbar.tsx          # Navigation with scroll detection
+│   ├── Hero.tsx            # Hero section + parallax gradients
+│   ├── About.tsx           # About section + animations
+│   ├── Services.tsx        # 6 service cards with 3D tilt
+│   ├── Portfolio.tsx       # 6 featured projects showcase
+│   ├── Testimonials.tsx    # Auto-rotating testimonials
+│   ├── Contact.tsx         # Contact form with validation
+│   ├── Footer.tsx          # Footer with links
+│   ├── CustomCursor.tsx    # Advanced cursor system
+│   ├── StarField.tsx       # Interactive starfield (150 stars)
+│   ├── AnimatedIcons.tsx   # SVG icon library (10+ icons)
+│   ├── MagneticButton.tsx  # Reusable magnetic button
+│   ├── InteractiveCard.tsx # 3D tilt card component
+│   └── index.ts            # Component exports
+│
+├── hooks/
+│   ├── useAnimations.ts    # Scroll & animation hooks
+│   │   ├── useScrollReveal()
+│   │   ├── useMouseTracker()
+│   │   ├── useWindowSize()
+│   │   ├── useScrollPosition()
+│   │   └── useScrollFadeVariants()
+│   └── useCursor.ts        # Cursor & interaction hooks
+│       ├── useCursorPosition()
+│       ├── useParallax()
+│       └── useMagneticEffect()
+│
+├── styles/
+│   └── globals.css         # Tailwind imports & custom styles
+│
+├── utils/
+│   ├── animations.ts       # Animation variants & configs
+│   └── constants.ts        # Project constants
+│
+├── tailwind.config.js      # Tailwind CSS configuration
+├── tsconfig.json           # TypeScript configuration
+├── next.config.js          # Next.js configuration
+└── package.json            # Dependencies & scripts
+```
 
 ---
 
-**Built with Next.js, React, Framer Motion, and Tailwind CSS**
+## 🛠️ Available Scripts
 
-Enjoy your premium tech website! 🚀
+```bash
+npm run dev        # Start development server with hot reload
+npm run build      # Build for production
+npm start          # Start production server
+npm run lint       # Run ESLint
+npm run type-check # Run TypeScript type checking
+```
+
+---
+
+## 🎨 Tech Stack
+
+| Layer | Technology | Version |
+|-------|-----------|---------|
+| **Framework** | Next.js | 16.2.3 |
+| **Runtime** | React | 18 |
+| **Language** | TypeScript | 5.0+ |
+| **Styling** | Tailwind CSS | 3.0 |
+| **Animations** | Framer Motion | 10.16 |
+| **Build Tool** | Turbopack | Latest |
+
+---
+
+## 🎨 Customization Guide
+
+### Change Theme Colors
+
+Edit `tailwind.config.js`:
+
+```javascript
+colors: {
+  'dark-bg': '#0a0e27',      // Main background
+  'dark-surface': '#11152e', // Card backgrounds
+  'dark-border': '#1e2a4f',  // Border color
+  'dark-text': '#e0e5f0',    // Primary text
+  'dark-muted': '#8894b1',   // Muted text
+  'accent-blue': '#00d4ff',  // Primary accent
+  'accent-indigo': '#6366f1', // Secondary accent
+  'accent-purple': '#a78bfa', // Tertiary accent
+}
+```
+
+### Adjust Animation Speeds
+
+Modify in components and hooks files:
+
+- `CustomCursor.tsx` - Cursor spring tension (stiffness)
+- `hooks/useCursor.ts` - Parallax & tilt speeds
+- `AnimatedIcons.tsx` - Icon animation durations
+- `tailwind.config.js` - Global animation timing
+
+### Update Content
+
+Edit text and data in:
+
+- `components/Hero.tsx` - Hero copy & stats
+- `components/Services.tsx` - Service descriptions
+- `components/Portfolio.tsx` - Project info & tags
+- `components/Testimonials.tsx` - Testimonial text
+- `components/Contact.tsx` - Contact form
+
+### Customize Icons
+
+Replace SVG icons in `components/AnimatedIcons.tsx` with your own designs
+
+---
+
+## 📊 Performance Features
+
+✅ **Turbopack** - 5-10x faster builds than Webpack  
+✅ **Event Throttling** - Smooth 60fps interactions  
+✅ **GPU Acceleration** - `willChange` CSS hints  
+✅ **Lazy Loading** - Components & images load on demand  
+✅ **CSS Optimization** - Tailwind CSS tree-shaking  
+✅ **Memoization** - `useMemo` for expensive calculations  
+✅ **Responsive** - Mobile-first design approach  
+
+---
+
+## 🌐 Browser Support
+
+| Browser | Supported | Version |
+|---------|-----------|---------|
+| Chrome | ✅ | Latest |
+| Firefox | ✅ | Latest |
+| Safari | ✅ | Latest |
+| Edge | ✅ | Latest |
+| Mobile Safari (iOS) | ✅ | 12+ |
+| Chrome Mobile | ✅ | Latest |
+
+---
+
+## 📱 Responsive Breakpoints
+
+```
+Mobile:   320px - 640px   (sm)
+Tablet:   641px - 1024px  (md, lg)
+Desktop:  1025px+         (xl, 2xl)
+```
+
+---
+
+## 🚀 Deployment
+
+### Deploy to Vercel (Recommended)
+
+```bash
+npm install -g vercel
+vercel
+```
+
+### Deploy to Other Platforms
+
+The project can be deployed to any platform supporting Next.js:
+
+- **Netlify**: `vercel build` → Deploy `out` folder
+- **AWS Amplify**: Connect GitHub repo
+- **Docker**: Build & run container
+- **Self-hosted**: `npm run build && npm start`
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see details in LICENSE file.
+
+---
+
+## 🙏 Acknowledgments
+
+- [Framer Motion](https://www.framer.com/motion/) - Amazing animation library
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://react.dev/) - UI library
+
+---
+
+## 📞 Support & Contact
+
+- **GitHub Issues**: [Report bugs or request features](https://github.com/Hiran-Abhisheka/nexus-website/issues)
+- **Email**: contact@nexus.dev
+- **Website**: https://nexus-website.vercel.app
+
+---
+
+<div align="center">
+
+### ⭐ Star this repo if you found it helpful!
+
+Made with ❤️ by the NEXUS team
+
+</div>
+
