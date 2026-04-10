@@ -14,12 +14,11 @@
 [View Live Demo](https://nexus-website.vercel.app) • [Report Bug](https://github.com/Hiran-Abhisheka/nexus-website/issues) • [Request Feature](https://github.com/Hiran-Abhisheka/nexus-website/issues)
 
 </div>
----
+
 <p align="center">
    <img src="https://i.postimg.cc/Bb88rc4b/Screenshot-2026-04-10-112341.png" alt="Nexus Site Preview" width="800" />
 </p>
----
----
+
 
 ## ✨ Key Features
 
