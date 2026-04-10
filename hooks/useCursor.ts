@@ -94,7 +94,7 @@ export const useParallax = (offset = 0.5) => {
 export const useMagneticEffect = (magneticStrength = 0.5) => {
   const [isHovering, setIsHovering] = useState(false)
   const [magneticPosition, setMagneticPosition] = useState({ x: 0, y: 0 })
-  const elementRef = useRef<HTMLDivElement>(null)
+  const elementRef = useRef<any>(null)
 
   useEffect(() => {
     if (!isHovering || !elementRef.current) return
@@ -128,7 +128,7 @@ export const use3DTilt = (
   tiltStrength = 15,
 ) => {
   const [tilt, setTilt] = useState({ x: 0, y: 0 })
-  const elementRef = useRef<HTMLDivElement>(null)
+  const elementRef = useRef<any>(null)
 
   useEffect(() => {
     const element = elementRef.current

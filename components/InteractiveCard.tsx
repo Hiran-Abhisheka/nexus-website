@@ -5,7 +5,7 @@ import { use3DTilt } from '@/hooks/useCursor'
 import React from 'react'
 
 interface InteractiveCardProps {
-  icon?: React.ReactNode
+  icon?: React.ReactNode | React.FC<any>
   title: string
   description: string
   className?: string

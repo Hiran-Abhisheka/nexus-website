@@ -20,6 +20,7 @@
 ## ✨ Key Features
 
 ### 🎨 **Premium Design**
+
 - **Dark Space Theme** with glassmorphism & cinematic lighting
 - **Responsive Design** optimized for all devices (mobile, tablet, desktop)
 - **Custom Color Palette** with accent blues, indigos & purples
@@ -27,6 +28,7 @@
 - **Professional Typography** with proper hierarchy
 
 ### 🖱️ **Advanced Cursor Interactions**
+
 - **3-Layer Custom Cursor** with spring physics animations
 - **Magnetic Buttons** that pull toward your cursor
 - **Interactive 3D Cards** with tilt effects based on mouse movement
@@ -35,6 +37,7 @@
 - **GPU-Accelerated** performance (60fps)
 
 ### ⚡ **Smooth Animations**
+
 - **Framer Motion** for professional motion graphics
 - **Scroll Reveal Effects** with IntersectionObserver
 - **Staggered Animations** for visual hierarchy
@@ -43,6 +46,7 @@
 - **Hover Interactions** with instant, responsive feedback
 
 ### 📊 **Portfolio Showcase**
+
 - 6 Featured projects with animated cards
 - Tech stack tags for each project
 - Glowing border effects on hover
@@ -50,6 +54,7 @@
 - Category-based organization
 
 ### 📱 **Performance Optimized**
+
 - **Turbopack** for lightning-fast builds
 - **Event Throttling** for smooth interactions
 - **CSS Optimization** through Tailwind purging
@@ -60,22 +65,23 @@
 
 ## 🎯 Sections Overview
 
-| Section | Features |
-|---------|----------|
-| **Navbar** | Smooth scroll detection, responsive menu, glass effect |
-| **Hero** | Cursor-tracking gradients, parallax orbs, achievement stats |
-| **About** | Animated background, feature highlights, animated icons |
-| **Services** | 6 interactive cards with 3D tilt, icon animations |
-| **Portfolio** | 6 project cards with tech tags, hover effects, glowing borders |
-| **Testimonials** | Auto-rotating carousel, manual navigation, smooth transitions |
-| **Contact** | Form with validation, success feedback, decorative elements |
-| **Footer** | Links, social media, copyright info |
+| Section          | Features                                                       |
+| ---------------- | -------------------------------------------------------------- |
+| **Navbar**       | Smooth scroll detection, responsive menu, glass effect         |
+| **Hero**         | Cursor-tracking gradients, parallax orbs, achievement stats    |
+| **About**        | Animated background, feature highlights, animated icons        |
+| **Services**     | 6 interactive cards with 3D tilt, icon animations              |
+| **Portfolio**    | 6 project cards with tech tags, hover effects, glowing borders |
+| **Testimonials** | Auto-rotating carousel, manual navigation, smooth transitions  |
+| **Contact**      | Form with validation, success feedback, decorative elements    |
+| **Footer**       | Links, social media, copyright info                            |
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - **Node.js** 18.0 or higher
 - **npm** or **yarn** package manager
 - **Git** for cloning
@@ -172,14 +178,14 @@ npm run type-check # Run TypeScript type checking
 
 ## 🎨 Tech Stack
 
-| Layer | Technology | Version |
-|-------|-----------|---------|
-| **Framework** | Next.js | 16.2.3 |
-| **Runtime** | React | 18 |
-| **Language** | TypeScript | 5.0+ |
-| **Styling** | Tailwind CSS | 3.0 |
-| **Animations** | Framer Motion | 10.16 |
-| **Build Tool** | Turbopack | Latest |
+| Layer          | Technology    | Version |
+| -------------- | ------------- | ------- |
+| **Framework**  | Next.js       | 16.2.3  |
+| **Runtime**    | React         | 18      |
+| **Language**   | TypeScript    | 5.0+    |
+| **Styling**    | Tailwind CSS  | 3.0     |
+| **Animations** | Framer Motion | 10.16   |
+| **Build Tool** | Turbopack     | Latest  |
 
 ---
 
@@ -235,20 +241,20 @@ Replace SVG icons in `components/AnimatedIcons.tsx` with your own designs
 ✅ **Lazy Loading** - Components & images load on demand  
 ✅ **CSS Optimization** - Tailwind CSS tree-shaking  
 ✅ **Memoization** - `useMemo` for expensive calculations  
-✅ **Responsive** - Mobile-first design approach  
+✅ **Responsive** - Mobile-first design approach
 
 ---
 
 ## 🌐 Browser Support
 
-| Browser | Supported | Version |
-|---------|-----------|---------|
-| Chrome | ✅ | Latest |
-| Firefox | ✅ | Latest |
-| Safari | ✅ | Latest |
-| Edge | ✅ | Latest |
-| Mobile Safari (iOS) | ✅ | 12+ |
-| Chrome Mobile | ✅ | Latest |
+| Browser             | Supported | Version |
+| ------------------- | --------- | ------- |
+| Chrome              | ✅        | Latest  |
+| Firefox             | ✅        | Latest  |
+| Safari              | ✅        | Latest  |
+| Edge                | ✅        | Latest  |
+| Mobile Safari (iOS) | ✅        | 12+     |
+| Chrome Mobile       | ✅        | Latest  |
 
 ---
 
@@ -324,4 +330,3 @@ This project is licensed under the **MIT License** - see details in LICENSE file
 Made with ❤️ by the NEXUS team
 
 </div>
-
