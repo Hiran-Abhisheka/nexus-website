@@ -19,7 +19,6 @@
    <img src="https://i.postimg.cc/Bb88rc4b/Screenshot-2026-04-10-112341.png" alt="Nexus Site Preview" width="800" />
 </p>
 
-
 ## ✨ Key Features
 
 ### 🎨 **Premium Design**
@@ -282,6 +281,7 @@ The project is **automatically deployed to Netlify** when you push to the `main`
 ### Automatic CI/CD Pipeline
 
 This project includes GitHub Actions CI/CD that:
+
 1. ✅ Runs on every push to `main`
 2. ✅ Installs dependencies & builds the project
 3. ✅ Runs ESLint checks (non-blocking)
@@ -344,6 +344,5 @@ This project is licensed under the **MIT License** - see details in LICENSE file
 <div align="center">
 
 ### ⭐ Star this repo if you found it helpful!
-
 
 </div>

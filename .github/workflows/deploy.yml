@@ -1,13 +1,16 @@
-name: CI/CD - Build & Deploy to Netlify
+name: CI/CD - Build & Test
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
-    name: Build & Deploy
+  build-and-test:
+    name: Build & Test
     runs-on: ubuntu-latest
 
     steps:
@@ -35,21 +38,12 @@ jobs:
       - name: Build Next.js project
         run: npm run build
 
-      # Deploy to Netlify using CLI
-      - name: Deploy to Netlify
-        run: |
-          npm install -g netlify-cli
-          netlify deploy --prod --dir=.
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-
-      # Post deployment notification (optional)
-      - name: Deployment Success
+      # Test success
+      - name: Build Success
         if: success()
-        run: echo "✅ Deployment to Netlify completed successfully!"
+        run: echo "✅ Build completed successfully! Netlify will auto-deploy from this commit."
 
       # Failure notification
-      - name: Deployment Failed
+      - name: Build Failed
         if: failure()
-        run: echo "❌ Deployment failed! Check build logs above."
+        run: echo "❌ Build failed! Fix errors before pushing."
