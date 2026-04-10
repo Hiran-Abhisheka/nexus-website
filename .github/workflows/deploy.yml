@@ -1,4 +1,4 @@
-name: CI/CD - Build & Test
+name: CI/CD - Build & Deploy to Vercel
 
 on:
   push:
@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  build-and-test:
-    name: Build & Test
+  build-and-deploy:
+    name: Build & Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -38,12 +38,23 @@ jobs:
       - name: Build Next.js project
         run: npm run build
 
-      # Test success
-      - name: Build Success
-        if: success()
-        run: echo "✅ Build completed successfully! Netlify will auto-deploy from this commit."
+      # Deploy to Vercel (production on main, preview on PR)
+      - name: Deploy to Vercel
+        uses: vercel/action@master
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          production: ${{ github.ref == 'refs/heads/main' }}
+        env:
+          VERCEL_ENV: ${{ github.ref == 'refs/heads/main' && 'production' || 'preview' }}
 
-      # Failure notification
-      - name: Build Failed
+      # Deployment success notification
+      - name: Deployment Success
+        if: success()
+        run: echo "✅ Deployment to Vercel completed successfully!"
+
+      # Deployment failure notification
+      - name: Deployment Failed
         if: failure()
-        run: echo "❌ Build failed! Fix errors before pushing."
+        run: echo "❌ Deployment failed! Check build logs above."
