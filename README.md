@@ -15,7 +15,10 @@
 
 </div>
 
----
+<p align="center">
+   <img src="https://i.postimg.cc/Bb88rc4b/Screenshot-2026-04-10-112341.png" alt="Nexus Site Preview" width="800" />
+</p>
+
 
 ## ✨ Key Features
 
@@ -315,18 +318,9 @@ This project is licensed under the **MIT License** - see details in LICENSE file
 
 ---
 
-## 📞 Support & Contact
-
-- **GitHub Issues**: [Report bugs or request features](https://github.com/Hiran-Abhisheka/nexus-website/issues)
-- **Email**: contact@nexus.dev
-- **Website**: https://nexus-website.vercel.app
-
----
-
 <div align="center">
 
 ### ⭐ Star this repo if you found it helpful!
 
-Made with ❤️ by the NEXUS team
 
 </div>
