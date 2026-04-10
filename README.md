@@ -11,7 +11,7 @@
 ![Framer Motion Badge](https://img.shields.io/badge/Framer%20Motion-10-FF1B6D?style=flat-square)
 ![License Badge](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-[View Live Demo](https://nexus-website1.netlify.app) • [Report Bug](https://github.com/Hiran-Abhisheka/nexus-website/issues) • [Request Feature](https://github.com/Hiran-Abhisheka/nexus-website/issues)
+[View Live Demo](https://nexus-website-blue.vercel.app) • [Report Bug](https://github.com/Hiran-Abhisheka/nexus-website/issues) • [Request Feature](https://github.com/Hiran-Abhisheka/nexus-website/issues)
 
 </div>
 
@@ -274,9 +274,9 @@ Desktop:  1025px+         (xl, 2xl)
 
 ### Live Deployment
 
-The project is **automatically deployed to Netlify** when you push to the `main` branch.
+The project is **automatically deployed to Vercel** when you push to the `main` branch.
 
-**Live URL**: https://nexus-website1.netlify.app
+**Live URL**: https://nexus-website-blue.vercel.app
 
 ### Automatic CI/CD Pipeline
 
@@ -285,29 +285,27 @@ This project includes GitHub Actions CI/CD that:
 1. ✅ Runs on every push to `main`
 2. ✅ Installs dependencies & builds the project
 3. ✅ Runs ESLint checks (non-blocking)
-4. ✅ Automatically deploys to Netlify if build succeeds
-5. ✅ Posts deployment status on commit
+4. ✅ Automatically deploys to Vercel if build succeeds
+5. ✅ Posts deployment status on each commit
 
 **GitHub Actions workflow**: `.github/workflows/deploy.yml`
 
-### Manual Deployment to Netlify
+**Setup required:**
+- Add `VERCEL_TOKEN` secret to GitHub (get from [Vercel Settings](https://vercel.com/account/tokens))
+- Workflow will auto-detect your Vercel project
 
-```bash
-npm install -g netlify-cli
-netlify deploy --prod
-```
-
-### Deploy to Vercel
+### Manual Deployment to Vercel
 
 ```bash
 npm install -g vercel
-vercel
+vercel --prod
 ```
 
 ### Deploy to Other Platforms
 
 The project can be deployed to any platform supporting Next.js:
 
+- **Netlify**: Push with GitHub integration
 - **AWS Amplify**: Connect GitHub repo
 - **Docker**: Build & run container
 - **Self-hosted**: `npm run build && npm start`
