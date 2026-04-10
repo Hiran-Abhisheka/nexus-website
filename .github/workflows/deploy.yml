@@ -40,14 +40,13 @@ jobs:
 
       # Deploy to Vercel (production on main, preview on PR)
       - name: Deploy to Vercel
-        uses: vercel/action@master
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          production: ${{ github.ref == 'refs/heads/main' }}
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          npm install -g vercel
+          vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
         env:
-          VERCEL_ENV: ${{ github.ref == 'refs/heads/main' && 'production' || 'preview' }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
       # Deployment success notification
       - name: Deployment Success
