@@ -11,7 +11,7 @@
 ![Framer Motion Badge](https://img.shields.io/badge/Framer%20Motion-10-FF1B6D?style=flat-square)
 ![License Badge](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-[View Live Demo](https://nexus-website.vercel.app) • [Report Bug](https://github.com/Hiran-Abhisheka/nexus-website/issues) • [Request Feature](https://github.com/Hiran-Abhisheka/nexus-website/issues)
+[View Live Demo](https://nexus-website1.netlify.app) • [Report Bug](https://github.com/Hiran-Abhisheka/nexus-website/issues) • [Request Feature](https://github.com/Hiran-Abhisheka/nexus-website/issues)
 
 </div>
 
@@ -273,7 +273,31 @@ Desktop:  1025px+         (xl, 2xl)
 
 ## 🚀 Deployment
 
-### Deploy to Vercel (Recommended)
+### Live Deployment
+
+The project is **automatically deployed to Netlify** when you push to the `main` branch.
+
+**Live URL**: https://nexus-website1.netlify.app
+
+### Automatic CI/CD Pipeline
+
+This project includes GitHub Actions CI/CD that:
+1. ✅ Runs on every push to `main`
+2. ✅ Installs dependencies & builds the project
+3. ✅ Runs ESLint checks (non-blocking)
+4. ✅ Automatically deploys to Netlify if build succeeds
+5. ✅ Posts deployment status on commit
+
+**GitHub Actions workflow**: `.github/workflows/deploy.yml`
+
+### Manual Deployment to Netlify
+
+```bash
+npm install -g netlify-cli
+netlify deploy --prod
+```
+
+### Deploy to Vercel
 
 ```bash
 npm install -g vercel
@@ -284,7 +308,6 @@ vercel
 
 The project can be deployed to any platform supporting Next.js:
 
-- **Netlify**: `vercel build` → Deploy `out` folder
 - **AWS Amplify**: Connect GitHub repo
 - **Docker**: Build & run container
 - **Self-hosted**: `npm run build && npm start`
