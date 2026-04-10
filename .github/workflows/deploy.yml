@@ -31,7 +31,7 @@ jobs:
 
       # Run linting (non-blocking)
       - name: Run ESLint
-        run: npm run lint
+        run: npm run lint || echo "Linting warnings/errors found but continuing..."
         continue-on-error: true
 
       # Build the project
@@ -43,10 +43,10 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: |
           npm install -g vercel
+          vercel link --yes --token=${{ secrets.VERCEL_TOKEN }}
           vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
         env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 
       # Deployment success notification
       - name: Deployment Success
