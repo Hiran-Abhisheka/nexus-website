@@ -11,7 +11,7 @@
 ![Framer Motion Badge](https://img.shields.io/badge/Framer%20Motion-10-FF1B6D?style=flat-square)
 ![License Badge](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-[View Live Demo](https://nexus-website-blue.vercel.app) • [Report Bug](https://github.com/Hiran-Abhisheka/nexus-website/issues) • [Request Feature](https://github.com/Hiran-Abhisheka/nexus-website/issues)
+[View Live Demo](https://nexus-website-blue.vercel.app/) • [Report Bug](https://github.com/Hiran-Abhisheka/nexus-website/issues) • [Request Feature](https://github.com/Hiran-Abhisheka/nexus-website/issues)
 
 </div>
 
